@@ -27,7 +27,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, include: path.resolve(__dirname, 'node_modules/mapbox-gl/js/render/painter/use_program.js'), loader: 'transform/cacheable?brfs' },
-      { test: /\.scss$/, loaders: ["style", "css", "sass"] },
+      { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] },
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.json$/, loader: 'json' },
       { test: /\.css$/, loader: 'style-loader!css-loader' },

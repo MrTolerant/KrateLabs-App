@@ -1,5 +1,5 @@
 import React from 'react'
-import { Glyphicon } from 'react-bootstrap'
+import Octicon from 'octicons-react'
 import { observer } from 'mobx-react'
 import { store } from '../store'
 
@@ -53,7 +53,7 @@ export default class SearchRemove extends React.Component {
         onMouseEnter={ () => this.setState({ hover: true }) }
         onMouseLeave={ () => this.setState({ hover: false }) }
         style={ style }>
-        <Glyphicon glyph='chevron-down' />
+        <Octicon icon='chevron-down' />
       </div>
     )
   }

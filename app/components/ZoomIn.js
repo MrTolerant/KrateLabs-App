@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Glyphicon } from 'react-bootstrap'
+import Octicon from 'octicons-react'
 
 export default class ZoomIn extends Component {
   static defaultProps = {
@@ -61,7 +61,7 @@ export default class ZoomIn extends Component {
         onMouseEnter={ () => this.setState({ hover: true }) }
         onMouseLeave={ () => this.setState({ hover: false }) }
         >
-        <Glyphicon style={ styles.glyph } glyph='plus' />
+        <Octicon style={ styles.glyph } icon='plus' />
       </div>
     )
   }

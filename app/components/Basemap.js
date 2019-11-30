@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Glyphicon } from 'react-bootstrap'
+import Octicon from 'octicons-react'
 import { observer } from 'mobx-react'
 import { store } from '../store'
 
@@ -61,7 +61,7 @@ export default class Basemap extends Component {
         onMouseEnter={ () => this.setState({ hover: true }) }
         onMouseLeave={ () => this.setState({ hover: false }) }
         >
-        <Glyphicon style={ styles.glyph } glyph='globe' />
+        <Octicon style={ styles.glyph } icon='globe' />
       </div>
     )
   }

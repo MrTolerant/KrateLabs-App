@@ -74,7 +74,7 @@ $headings-color:          inherit !default;
 
 //== Iconography
 //
-//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+//## Specify custom location and filename of the included Octicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
 
@@ -83,9 +83,9 @@ $headings-color:          inherit !default;
 $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
 
 //** File name for all font files.
-$icon-font-name:          "glyphicons-halflings-regular" !default;
+$icon-font-name:          "Octicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
-$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
+$icon-font-svg-id:        "Octicons_halflingsregular" !default;
 
 
 //== Components

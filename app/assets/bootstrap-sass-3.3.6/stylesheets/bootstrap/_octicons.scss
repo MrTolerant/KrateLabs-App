@@ -1,0 +1,307 @@
+//
+// Octicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="Octicon Octicon-star"></span> Star</a>
+
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Octicons Halflings';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff2'), '#{$icon-font-path}#{$icon-font-name}.woff2')) format('woff2'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
+  }
+}
+
+// Catchall baseclass
+.Octicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Octicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.Octicon-asterisk               { &:before { content: "\002a"; } }
+.Octicon-plus                   { &:before { content: "\002b"; } }
+.Octicon-euro,
+.Octicon-eur                    { &:before { content: "\20ac"; } }
+.Octicon-minus                  { &:before { content: "\2212"; } }
+.Octicon-cloud                  { &:before { content: "\2601"; } }
+.Octicon-envelope               { &:before { content: "\2709"; } }
+.Octicon-pencil                 { &:before { content: "\270f"; } }
+.Octicon-glass                  { &:before { content: "\e001"; } }
+.Octicon-music                  { &:before { content: "\e002"; } }
+.Octicon-search                 { &:before { content: "\e003"; } }
+.Octicon-heart                  { &:before { content: "\e005"; } }
+.Octicon-star                   { &:before { content: "\e006"; } }
+.Octicon-star-empty             { &:before { content: "\e007"; } }
+.Octicon-user                   { &:before { content: "\e008"; } }
+.Octicon-film                   { &:before { content: "\e009"; } }
+.Octicon-th-large               { &:before { content: "\e010"; } }
+.Octicon-th                     { &:before { content: "\e011"; } }
+.Octicon-th-list                { &:before { content: "\e012"; } }
+.Octicon-ok                     { &:before { content: "\e013"; } }
+.Octicon-remove                 { &:before { content: "\e014"; } }
+.Octicon-zoom-in                { &:before { content: "\e015"; } }
+.Octicon-zoom-out               { &:before { content: "\e016"; } }
+.Octicon-off                    { &:before { content: "\e017"; } }
+.Octicon-signal                 { &:before { content: "\e018"; } }
+.Octicon-cog                    { &:before { content: "\e019"; } }
+.Octicon-trash                  { &:before { content: "\e020"; } }
+.Octicon-home                   { &:before { content: "\e021"; } }
+.Octicon-file                   { &:before { content: "\e022"; } }
+.Octicon-time                   { &:before { content: "\e023"; } }
+.Octicon-road                   { &:before { content: "\e024"; } }
+.Octicon-download-alt           { &:before { content: "\e025"; } }
+.Octicon-download               { &:before { content: "\e026"; } }
+.Octicon-upload                 { &:before { content: "\e027"; } }
+.Octicon-inbox                  { &:before { content: "\e028"; } }
+.Octicon-play-circle            { &:before { content: "\e029"; } }
+.Octicon-repeat                 { &:before { content: "\e030"; } }
+.Octicon-refresh                { &:before { content: "\e031"; } }
+.Octicon-list-alt               { &:before { content: "\e032"; } }
+.Octicon-lock                   { &:before { content: "\e033"; } }
+.Octicon-flag                   { &:before { content: "\e034"; } }
+.Octicon-headphones             { &:before { content: "\e035"; } }
+.Octicon-volume-off             { &:before { content: "\e036"; } }
+.Octicon-volume-down            { &:before { content: "\e037"; } }
+.Octicon-volume-up              { &:before { content: "\e038"; } }
+.Octicon-qrcode                 { &:before { content: "\e039"; } }
+.Octicon-barcode                { &:before { content: "\e040"; } }
+.Octicon-tag                    { &:before { content: "\e041"; } }
+.Octicon-tags                   { &:before { content: "\e042"; } }
+.Octicon-book                   { &:before { content: "\e043"; } }
+.Octicon-bookmark               { &:before { content: "\e044"; } }
+.Octicon-print                  { &:before { content: "\e045"; } }
+.Octicon-camera                 { &:before { content: "\e046"; } }
+.Octicon-font                   { &:before { content: "\e047"; } }
+.Octicon-bold                   { &:before { content: "\e048"; } }
+.Octicon-italic                 { &:before { content: "\e049"; } }
+.Octicon-text-height            { &:before { content: "\e050"; } }
+.Octicon-text-width             { &:before { content: "\e051"; } }
+.Octicon-align-left             { &:before { content: "\e052"; } }
+.Octicon-align-center           { &:before { content: "\e053"; } }
+.Octicon-align-right            { &:before { content: "\e054"; } }
+.Octicon-align-justify          { &:before { content: "\e055"; } }
+.Octicon-list                   { &:before { content: "\e056"; } }
+.Octicon-indent-left            { &:before { content: "\e057"; } }
+.Octicon-indent-right           { &:before { content: "\e058"; } }
+.Octicon-facetime-video         { &:before { content: "\e059"; } }
+.Octicon-picture                { &:before { content: "\e060"; } }
+.Octicon-map-marker             { &:before { content: "\e062"; } }
+.Octicon-adjust                 { &:before { content: "\e063"; } }
+.Octicon-tint                   { &:before { content: "\e064"; } }
+.Octicon-edit                   { &:before { content: "\e065"; } }
+.Octicon-share                  { &:before { content: "\e066"; } }
+.Octicon-check                  { &:before { content: "\e067"; } }
+.Octicon-move                   { &:before { content: "\e068"; } }
+.Octicon-step-backward          { &:before { content: "\e069"; } }
+.Octicon-fast-backward          { &:before { content: "\e070"; } }
+.Octicon-backward               { &:before { content: "\e071"; } }
+.Octicon-play                   { &:before { content: "\e072"; } }
+.Octicon-pause                  { &:before { content: "\e073"; } }
+.Octicon-stop                   { &:before { content: "\e074"; } }
+.Octicon-forward                { &:before { content: "\e075"; } }
+.Octicon-fast-forward           { &:before { content: "\e076"; } }
+.Octicon-step-forward           { &:before { content: "\e077"; } }
+.Octicon-eject                  { &:before { content: "\e078"; } }
+.Octicon-chevron-left           { &:before { content: "\e079"; } }
+.Octicon-chevron-right          { &:before { content: "\e080"; } }
+.Octicon-plus-sign              { &:before { content: "\e081"; } }
+.Octicon-minus-sign             { &:before { content: "\e082"; } }
+.Octicon-remove-sign            { &:before { content: "\e083"; } }
+.Octicon-ok-sign                { &:before { content: "\e084"; } }
+.Octicon-question-sign          { &:before { content: "\e085"; } }
+.Octicon-info-sign              { &:before { content: "\e086"; } }
+.Octicon-screenshot             { &:before { content: "\e087"; } }
+.Octicon-remove-circle          { &:before { content: "\e088"; } }
+.Octicon-ok-circle              { &:before { content: "\e089"; } }
+.Octicon-ban-circle             { &:before { content: "\e090"; } }
+.Octicon-arrow-left             { &:before { content: "\e091"; } }
+.Octicon-arrow-right            { &:before { content: "\e092"; } }
+.Octicon-arrow-up               { &:before { content: "\e093"; } }
+.Octicon-arrow-down             { &:before { content: "\e094"; } }
+.Octicon-share-alt              { &:before { content: "\e095"; } }
+.Octicon-resize-full            { &:before { content: "\e096"; } }
+.Octicon-resize-small           { &:before { content: "\e097"; } }
+.Octicon-exclamation-sign       { &:before { content: "\e101"; } }
+.Octicon-gift                   { &:before { content: "\e102"; } }
+.Octicon-leaf                   { &:before { content: "\e103"; } }
+.Octicon-fire                   { &:before { content: "\e104"; } }
+.Octicon-eye-open               { &:before { content: "\e105"; } }
+.Octicon-eye-close              { &:before { content: "\e106"; } }
+.Octicon-warning-sign           { &:before { content: "\e107"; } }
+.Octicon-plane                  { &:before { content: "\e108"; } }
+.Octicon-calendar               { &:before { content: "\e109"; } }
+.Octicon-random                 { &:before { content: "\e110"; } }
+.Octicon-comment                { &:before { content: "\e111"; } }
+.Octicon-magnet                 { &:before { content: "\e112"; } }
+.Octicon-chevron-up             { &:before { content: "\e113"; } }
+.Octicon-chevron-down           { &:before { content: "\e114"; } }
+.Octicon-retweet                { &:before { content: "\e115"; } }
+.Octicon-shopping-cart          { &:before { content: "\e116"; } }
+.Octicon-folder-close           { &:before { content: "\e117"; } }
+.Octicon-folder-open            { &:before { content: "\e118"; } }
+.Octicon-resize-vertical        { &:before { content: "\e119"; } }
+.Octicon-resize-horizontal      { &:before { content: "\e120"; } }
+.Octicon-hdd                    { &:before { content: "\e121"; } }
+.Octicon-bullhorn               { &:before { content: "\e122"; } }
+.Octicon-bell                   { &:before { content: "\e123"; } }
+.Octicon-certificate            { &:before { content: "\e124"; } }
+.Octicon-thumbs-up              { &:before { content: "\e125"; } }
+.Octicon-thumbs-down            { &:before { content: "\e126"; } }
+.Octicon-hand-right             { &:before { content: "\e127"; } }
+.Octicon-hand-left              { &:before { content: "\e128"; } }
+.Octicon-hand-up                { &:before { content: "\e129"; } }
+.Octicon-hand-down              { &:before { content: "\e130"; } }
+.Octicon-circle-arrow-right     { &:before { content: "\e131"; } }
+.Octicon-circle-arrow-left      { &:before { content: "\e132"; } }
+.Octicon-circle-arrow-up        { &:before { content: "\e133"; } }
+.Octicon-circle-arrow-down      { &:before { content: "\e134"; } }
+.Octicon-globe                  { &:before { content: "\e135"; } }
+.Octicon-wrench                 { &:before { content: "\e136"; } }
+.Octicon-tasks                  { &:before { content: "\e137"; } }
+.Octicon-filter                 { &:before { content: "\e138"; } }
+.Octicon-briefcase              { &:before { content: "\e139"; } }
+.Octicon-fullscreen             { &:before { content: "\e140"; } }
+.Octicon-dashboard              { &:before { content: "\e141"; } }
+.Octicon-paperclip              { &:before { content: "\e142"; } }
+.Octicon-heart-empty            { &:before { content: "\e143"; } }
+.Octicon-link                   { &:before { content: "\e144"; } }
+.Octicon-phone                  { &:before { content: "\e145"; } }
+.Octicon-pushpin                { &:before { content: "\e146"; } }
+.Octicon-usd                    { &:before { content: "\e148"; } }
+.Octicon-gbp                    { &:before { content: "\e149"; } }
+.Octicon-sort                   { &:before { content: "\e150"; } }
+.Octicon-sort-by-alphabet       { &:before { content: "\e151"; } }
+.Octicon-sort-by-alphabet-alt   { &:before { content: "\e152"; } }
+.Octicon-sort-by-order          { &:before { content: "\e153"; } }
+.Octicon-sort-by-order-alt      { &:before { content: "\e154"; } }
+.Octicon-sort-by-attributes     { &:before { content: "\e155"; } }
+.Octicon-sort-by-attributes-alt { &:before { content: "\e156"; } }
+.Octicon-unchecked              { &:before { content: "\e157"; } }
+.Octicon-expand                 { &:before { content: "\e158"; } }
+.Octicon-collapse-down          { &:before { content: "\e159"; } }
+.Octicon-collapse-up            { &:before { content: "\e160"; } }
+.Octicon-log-in                 { &:before { content: "\e161"; } }
+.Octicon-flash                  { &:before { content: "\e162"; } }
+.Octicon-log-out                { &:before { content: "\e163"; } }
+.Octicon-new-window             { &:before { content: "\e164"; } }
+.Octicon-record                 { &:before { content: "\e165"; } }
+.Octicon-save                   { &:before { content: "\e166"; } }
+.Octicon-open                   { &:before { content: "\e167"; } }
+.Octicon-saved                  { &:before { content: "\e168"; } }
+.Octicon-import                 { &:before { content: "\e169"; } }
+.Octicon-export                 { &:before { content: "\e170"; } }
+.Octicon-send                   { &:before { content: "\e171"; } }
+.Octicon-floppy-disk            { &:before { content: "\e172"; } }
+.Octicon-floppy-saved           { &:before { content: "\e173"; } }
+.Octicon-floppy-remove          { &:before { content: "\e174"; } }
+.Octicon-floppy-save            { &:before { content: "\e175"; } }
+.Octicon-floppy-open            { &:before { content: "\e176"; } }
+.Octicon-credit-card            { &:before { content: "\e177"; } }
+.Octicon-transfer               { &:before { content: "\e178"; } }
+.Octicon-cutlery                { &:before { content: "\e179"; } }
+.Octicon-header                 { &:before { content: "\e180"; } }
+.Octicon-compressed             { &:before { content: "\e181"; } }
+.Octicon-earphone               { &:before { content: "\e182"; } }
+.Octicon-phone-alt              { &:before { content: "\e183"; } }
+.Octicon-tower                  { &:before { content: "\e184"; } }
+.Octicon-stats                  { &:before { content: "\e185"; } }
+.Octicon-sd-video               { &:before { content: "\e186"; } }
+.Octicon-hd-video               { &:before { content: "\e187"; } }
+.Octicon-subtitles              { &:before { content: "\e188"; } }
+.Octicon-sound-stereo           { &:before { content: "\e189"; } }
+.Octicon-sound-dolby            { &:before { content: "\e190"; } }
+.Octicon-sound-5-1              { &:before { content: "\e191"; } }
+.Octicon-sound-6-1              { &:before { content: "\e192"; } }
+.Octicon-sound-7-1              { &:before { content: "\e193"; } }
+.Octicon-copyright-mark         { &:before { content: "\e194"; } }
+.Octicon-registration-mark      { &:before { content: "\e195"; } }
+.Octicon-cloud-download         { &:before { content: "\e197"; } }
+.Octicon-cloud-upload           { &:before { content: "\e198"; } }
+.Octicon-tree-conifer           { &:before { content: "\e199"; } }
+.Octicon-tree-deciduous         { &:before { content: "\e200"; } }
+.Octicon-cd                     { &:before { content: "\e201"; } }
+.Octicon-save-file              { &:before { content: "\e202"; } }
+.Octicon-open-file              { &:before { content: "\e203"; } }
+.Octicon-level-up               { &:before { content: "\e204"; } }
+.Octicon-copy                   { &:before { content: "\e205"; } }
+.Octicon-paste                  { &:before { content: "\e206"; } }
+// The following 2 Octicons are omitted for the time being because
+// they currently use Unicode codepoints that are outside the
+// Basic Multilingual Plane (BMP). Older buggy versions of WebKit can't handle
+// non-BMP codepoints in CSS string escapes, and thus can't display these two icons.
+// Notably, the bug affects some older versions of the Android Browser.
+// More info: https://github.com/twbs/bootstrap/issues/10106
+// .Octicon-door                   { &:before { content: "\1f6aa"; } }
+// .Octicon-key                    { &:before { content: "\1f511"; } }
+.Octicon-alert                  { &:before { content: "\e209"; } }
+.Octicon-equalizer              { &:before { content: "\e210"; } }
+.Octicon-king                   { &:before { content: "\e211"; } }
+.Octicon-queen                  { &:before { content: "\e212"; } }
+.Octicon-pawn                   { &:before { content: "\e213"; } }
+.Octicon-bishop                 { &:before { content: "\e214"; } }
+.Octicon-knight                 { &:before { content: "\e215"; } }
+.Octicon-baby-formula           { &:before { content: "\e216"; } }
+.Octicon-tent                   { &:before { content: "\26fa"; } }
+.Octicon-blackboard             { &:before { content: "\e218"; } }
+.Octicon-bed                    { &:before { content: "\e219"; } }
+.Octicon-apple                  { &:before { content: "\f8ff"; } }
+.Octicon-erase                  { &:before { content: "\e221"; } }
+.Octicon-hourglass              { &:before { content: "\231b"; } }
+.Octicon-lamp                   { &:before { content: "\e223"; } }
+.Octicon-duplicate              { &:before { content: "\e224"; } }
+.Octicon-piggy-bank             { &:before { content: "\e225"; } }
+.Octicon-scissors               { &:before { content: "\e226"; } }
+.Octicon-bitcoin                { &:before { content: "\e227"; } }
+.Octicon-btc                    { &:before { content: "\e227"; } }
+.Octicon-xbt                    { &:before { content: "\e227"; } }
+.Octicon-yen                    { &:before { content: "\00a5"; } }
+.Octicon-jpy                    { &:before { content: "\00a5"; } }
+.Octicon-ruble                  { &:before { content: "\20bd"; } }
+.Octicon-rub                    { &:before { content: "\20bd"; } }
+.Octicon-scale                  { &:before { content: "\e230"; } }
+.Octicon-ice-lolly              { &:before { content: "\e231"; } }
+.Octicon-ice-lolly-tasted       { &:before { content: "\e232"; } }
+.Octicon-education              { &:before { content: "\e233"; } }
+.Octicon-option-horizontal      { &:before { content: "\e234"; } }
+.Octicon-option-vertical        { &:before { content: "\e235"; } }
+.Octicon-menu-hamburger         { &:before { content: "\e236"; } }
+.Octicon-modal-window           { &:before { content: "\e237"; } }
+.Octicon-oil                    { &:before { content: "\e238"; } }
+.Octicon-grain                  { &:before { content: "\e239"; } }
+.Octicon-sunglasses             { &:before { content: "\e240"; } }
+.Octicon-text-size              { &:before { content: "\e241"; } }
+.Octicon-text-color             { &:before { content: "\e242"; } }
+.Octicon-text-background        { &:before { content: "\e243"; } }
+.Octicon-object-align-top       { &:before { content: "\e244"; } }
+.Octicon-object-align-bottom    { &:before { content: "\e245"; } }
+.Octicon-object-align-horizontal{ &:before { content: "\e246"; } }
+.Octicon-object-align-left      { &:before { content: "\e247"; } }
+.Octicon-object-align-vertical  { &:before { content: "\e248"; } }
+.Octicon-object-align-right     { &:before { content: "\e249"; } }
+.Octicon-triangle-right         { &:before { content: "\e250"; } }
+.Octicon-triangle-left          { &:before { content: "\e251"; } }
+.Octicon-triangle-bottom        { &:before { content: "\e252"; } }
+.Octicon-triangle-top           { &:before { content: "\e253"; } }
+.Octicon-console                { &:before { content: "\e254"; } }
+.Octicon-superscript            { &:before { content: "\e255"; } }
+.Octicon-subscript              { &:before { content: "\e256"; } }
+.Octicon-menu-left              { &:before { content: "\e257"; } }
+.Octicon-menu-right             { &:before { content: "\e258"; } }
+.Octicon-menu-down              { &:before { content: "\e259"; } }
+.Octicon-menu-up                { &:before { content: "\e260"; } }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Glyphicon, Input } from 'react-bootstrap'
+import { Octicon, Input } from 'react-bootstrap'
 import { observer } from 'mobx-react'
 import { store } from '../store'
 import { Result, SearchRemove, Remove } from '../components'
