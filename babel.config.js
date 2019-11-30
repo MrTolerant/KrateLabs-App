@@ -6,9 +6,7 @@ module.exports = {
       },
       'loose': true
     }],
-    'es2015',
-    'react',
-    '@babel/react',
+    '@babel/preset-react',
     '@babel/typescript'
   ],
 
