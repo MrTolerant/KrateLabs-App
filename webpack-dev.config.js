@@ -3,7 +3,6 @@ var webpack = require('webpack')
 
 module.exports = {
   context: path.join(__dirname, './app'),
-  debug: true,
   devtool: 'source-map',
   entry: {
     jsx: './index.js',
@@ -19,11 +18,14 @@ module.exports = {
     console: true,
     fs: 'empty'
   },
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
+  resolve: {
+    modules: [
+        path.join(__dirname, "src"),
+        "node_modules"
+      ]
   },
   module: {
-    loaders: [
+    rules: [
       { test: /\.js$/, include: path.resolve(__dirname, 'node_modules/mapbox-gl/js/render/painter/use_program.js'), loader: 'transform/cacheable?brfs' },
       { test: /\.scss$/, loaders: ["style", "css", "sass"] },
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
@@ -31,8 +33,15 @@ module.exports = {
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.(woff|woff2)$/, loader: 'url-loader' },
       { test: /\.(ttf|eot|svg|)$/, loader: 'url-loader' },
-      { test: /\.(html|ico|txt)$/, loader: 'file?name=[name].[ext]' },
-      { test: /\.(png|jpg|jpeg|gif)$/, loader: 'url-loader' }
+      { test: /\.(html|ico|txt)$/, loader: 'file-loader?name=[name].[ext]' },
+      { test: /\.(png|jpg|jpeg|gif)$/, loader: 'url-loader' },
+      {
+        include: /node_modules\/mapbox-gl/,
+        enforce: "pre",
+        loader: 'transform',
+        query: 'brfs'
+      }
+  
     ],
     noParse: /node_modules\/json-schema\/lib\/validate\.js/,
   },
@@ -42,14 +51,9 @@ module.exports = {
     net: '{}',
     console: '{}'
   },
-  postLoaders: [
-    {
-      include: /node_modules\/mapbox-gl/,
-      loader: 'transform',
-      query: 'brfs'
-    }
-  ],
+
   plugins: [
+
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') },
       __DEV__: true
